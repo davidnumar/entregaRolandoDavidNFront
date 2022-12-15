@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ClienteDetailComponent } from '../cliente/cliente-detail/cliente-detail.component';
 import { ClienteFormComponent } from '../cliente/cliente-form/cliente-form.component';
 import { ClienteMainComponent } from '../cliente/cliente-main/cliente-main.component';
+import { ProductoFormComponent } from '../producto/producto-form/producto-form.component';
+import { ProductoMainComponent } from '../producto/producto-main/producto-main.component';
 import { LoginComponent } from '../usuario/login/login.component';
 
 const routes: Routes = [
@@ -14,8 +16,17 @@ const routes: Routes = [
     pathMatch:'full'
   },
   {
+    path:'productos',
+    component:ProductoMainComponent,
+    pathMatch:'full'
+  },
+  {
     path:'cliente/new',
     component:ClienteFormComponent
+  },
+  {
+    path:'producto/new',
+    component:ProductoFormComponent
   },
   {
     path:'login',
@@ -24,6 +35,10 @@ const routes: Routes = [
   {
     path:'cliente/edit/:id',
     component:ClienteFormComponent
+  },
+  {
+    path:'productos/edit/:id',
+    component:ProductoFormComponent
   },
   {
     path:'cliente/view/:id',

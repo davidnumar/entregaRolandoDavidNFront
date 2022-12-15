@@ -6,6 +6,7 @@ import {HttpClientModule} from '@angular/common/http'
 import { ClienteModule } from './cliente/cliente.module';
 import { WebMainModule } from './web-main/web-main.module';
 import { UsuarioModule } from './usuario/usuario.module';
+import { ProductoModule } from './producto/producto.module';
 
 
 
@@ -18,6 +19,7 @@ import { UsuarioModule } from './usuario/usuario.module';
     AppRoutingModule,
     HttpClientModule,
     ClienteModule,
+    ProductoModule,
     WebMainModule,
     UsuarioModule
   ],
